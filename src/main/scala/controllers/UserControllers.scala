@@ -3,8 +3,8 @@ package controllers
 import at.favre.lib.crypto.bcrypt.BCrypt
 import cats.effect.IO
 import config.util.Token
-import dao.entity._
-import dao.repositories.UserRepository.findUserByUsername
+import config.util.Login
+import database_service.repositories.UserRepository.findUserByUsername
 import io.circe.jawn
 import io.circe.literal.JsonStringContext
 import org.http4s.Method.{GET, POST}

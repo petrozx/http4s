@@ -13,7 +13,7 @@ import scala.language.postfixOps
 object FileServiceController {
 
   val saveMultipartFiles: AuthedRoutes[Token, IO] = AuthedRoutes.of {
-    case req@POST -> Root / "files" as user =>
+    case req@POST -> Root / "files" as token =>
       req.req.decode[Multipart[IO]] {
         m => {
           for {
