@@ -15,9 +15,7 @@ object OrderController {
     case req@POST -> Root / "order" / "add" as _ => for {
       order <- req.req.as[Order]
       uuid <- UUIDGen.randomString[IO]
-      _ <- IO.fromFuture(IO.delay(saveOrder(Order(uuid, order.typeOfWork, order.date, order.announcedDateOfWork, order.factDateOfWork,
-        order.numberOfSeal, order.natureOfCargo, order.weight, order.containerType, order.numberContainer,
-        order.sizeContainer, order.specialMarks, order.companyId))))
+      _ <- IO.fromFuture(IO.delay(saveOrder(order.copy(id=uuid))))
       resp <- Ok("ok")
     } yield resp
   }

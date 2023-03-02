@@ -5,41 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08b0126e-c1fc-47e1-bcb3-3c6ca0844f08" name="Changes" comment="del">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/config/util/Login.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/controllers/OrderController.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/dao/Companies_DAO.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/Company.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/CompanyAttribute.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/File.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/FileCollection.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/Order.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/TypeOfWork.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/UserCompaniesCollection.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/CompanyRepository.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/FileRepository.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/OrderRepository.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/TypeOfWorkRepository.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__at_favre_lib_bcrypt_0_10_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_jwt_scala_jwt_circe_2_13_9_1_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_jwt_scala_jwt_core_2_13_9_1_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_jwt_scala_jwt_json_common_2_13_9_1_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_zaxxer_HikariCP_4_0_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_postgresql_postgresql_42_5_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_effect_2_13_3_4_6_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_effect_kernel_2_13_3_4_6_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_effect_std_2_13_3_4_6_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/http4s-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/http4s-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/http4s.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/http4s.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/controllers/CompanyController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/CompanyController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/controllers/FileServiceController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/FileServiceController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/controllers/UserControllers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/UserControllers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dao/entity/Company.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dao/entity/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/User.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dao/entity/UserAttribute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/UserAttribute.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dao/repositories/CompanyRepository.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dao/repositories/UserRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/UserRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main0.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/config/util/HikariUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/config/util/HikariUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/controllers/OrderController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/OrderController.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/entity/Order.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/Order.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/repositories/OrderRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/OrderRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/routes/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/routes/package.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +55,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fa894a4c-badf-4048-907e-63078e681237" />
+        <option name="url" value="https://github.com/petrozx/http4s.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

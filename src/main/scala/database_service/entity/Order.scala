@@ -7,7 +7,7 @@ import java.time.LocalDateTime
 @JsonCodec case class Order(
                   id: String,
                   typeOfWork: String,
-                  date: LocalDateTime,
+                  date: Option[LocalDateTime],
                   announcedDateOfWork: Option[LocalDateTime],
                   factDateOfWork: Option[LocalDateTime],
                   numberOfSeal: String,
@@ -23,7 +23,7 @@ import java.time.LocalDateTime
 final case class OrderTable(tag: Tag) extends Table[Order](tag, "order") {
   def id = column[String]("id", O.PrimaryKey, O.Unique)
   def typeOfWork = column[String]("typeOfWork")
-  def date = column[LocalDateTime]("date")
+  def date = column[Option[LocalDateTime]]("date")
   def announcedDateOfWork = column[Option[LocalDateTime]]("announcedDateOfWork")
   def factDateOfWork = column[Option[LocalDateTime]]("factDateOfWork")
   def numberOfSeal = column[String]("numberOfSeal")
