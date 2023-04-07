@@ -5,7 +5,7 @@ import database_service.entity.{TypeOfWork, TypeOfWorkTable}
 import slick.jdbc.PostgresProfile.api._
 
 object TypeOfWorkRepository {
-  private val typeOfWorkTable = TableQuery[TypeOfWorkTable]
+  val typeOfWorkTable = TableQuery[TypeOfWorkTable]
   def newTypeOfWork(typeOfWork: TypeOfWork) = db.run{
     typeOfWorkTable += typeOfWork
   }

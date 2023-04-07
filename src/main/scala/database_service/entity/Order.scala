@@ -1,11 +1,10 @@
 package database_service.entity
 import io.circe.generic.JsonCodec
 import slick.jdbc.H2Profile.api._
-import slick.lifted.ProvenShape
 
 import java.time.LocalDateTime
 @JsonCodec case class Order(
-                  id: String,
+                  orderID: String,
                   typeOfWork: String,
                   date: Option[LocalDateTime],
                   announcedDateOfWork: Option[LocalDateTime],
@@ -17,11 +16,12 @@ import java.time.LocalDateTime
                   numberContainer: String,
                   sizeContainer: String,
                   specialMarks: String,
+                  status: Option[String],
                   companyId: String
                 ) extends Serializable
 
 final case class OrderTable(tag: Tag) extends Table[Order](tag, "order") {
-  def id = column[String]("id", O.PrimaryKey, O.Unique)
+  def id = column[String]("orderID", O.PrimaryKey, O.Unique)
   def typeOfWork = column[String]("typeOfWork")
   def date = column[Option[LocalDateTime]]("date")
   def announcedDateOfWork = column[Option[LocalDateTime]]("announcedDateOfWork")
@@ -34,8 +34,9 @@ final case class OrderTable(tag: Tag) extends Table[Order](tag, "order") {
   def sizeContainer = column[String]("sizeContainer")
   def specialMarks = column[String]("specialMarks")
   def companyId = column[String]("companyId")
+  def status = column [Option[String]]("status", O.Default(Some("new")))
   def typeOfWorkRef = foreignKey("typeOfWork", typeOfWork, TableQuery[TypeOfWorkTable])(_.id)
-  override def * : ProvenShape[Order] = (id, typeOfWork, date, announcedDateOfWork, factDateOfWork,
+  override def * = (id, typeOfWork, date, announcedDateOfWork, factDateOfWork,
     numberOfSeal, natureOfCargo, weight, containerType, numberContainer, sizeContainer, specialMarks,
-    companyId).mapTo[Order]
+    status, companyId).mapTo[Order]
 }

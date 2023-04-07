@@ -4,7 +4,7 @@ import slick.jdbc.H2Profile.api._
 import io.circe.generic.JsonCodec
 
 @JsonCodec case class User(
-                id: String,
+                user_id: String,
                 username: String,
                 password: String,
                 role: String,
@@ -12,7 +12,7 @@ import io.circe.generic.JsonCodec
                 ) extends Serializable
 
 final case class UserTable(tag: Tag) extends Table[User](tag, "user") {
-  def id = column[String]("id", O.PrimaryKey, O.Unique)
+  def id = column[String]("user_id", O.PrimaryKey, O.Unique)
 
   def username = column[String]("username", O.Unique)
 

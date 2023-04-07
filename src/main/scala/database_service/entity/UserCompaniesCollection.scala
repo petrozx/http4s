@@ -1,8 +1,16 @@
 package database_service.entity
+import io.circe.generic.JsonCodec
 import slick.jdbc.H2Profile.api._
 
+@JsonCodec case class CompaniesIDs(companyId: List[String])
+
+@JsonCodec case class UserCompaniesCollection(
+                                    userId: String,
+                                    companyId: String,
+                                  ) extends Serializable
+
 final case class UserCompaniesCollectionTable(tag: Tag) extends
-  Table[(String, String)](tag, "userCompaniesCollection") {
+  Table[UserCompaniesCollection](tag, "userCompaniesCollection") {
   def userId = column[String]("userId")
 
   def companyId = column[String]("companyId")
@@ -13,5 +21,5 @@ final case class UserCompaniesCollectionTable(tag: Tag) extends
 
   def companyRef = foreignKey("companyId", companyId, TableQuery[CompanyTable])(_.id)
 
-  override def * = (userId, companyId)
+  override def * = (userId, companyId).mapTo[UserCompaniesCollection]
 }

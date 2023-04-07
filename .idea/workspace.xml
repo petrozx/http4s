@@ -5,12 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08b0126e-c1fc-47e1-bcb3-3c6ca0844f08" name="Changes" comment="del">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/config/util/Kafka.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/config/util/Topics.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/controllers/KafkaController.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/Changes.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/ChangesRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__co_fs2_fs2_core_2_13_3_5_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_circe_circe_core_2_13_0_14_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_circe_circe_generic_2_13_0_14_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_circe_circe_jawn_2_13_0_14_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_circe_circe_literal_2_13_0_14_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_circe_circe_numbers_2_13_0_14_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_circe_circe_parser_2_13_0_14_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scodec_scodec_bits_2_13_1_1_34_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/http4s.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/http4s.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main0.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/config/util/HikariUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/config/util/HikariUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/controllers/CompanyController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/CompanyController.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/controllers/OrderController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/OrderController.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/controllers/UserControllers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controllers/UserControllers.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/entity/Company.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/Company.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/entity/Order.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/Order.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/entity/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/User.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/entity/UserAttribute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/UserAttribute.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/entity/UserCompaniesCollection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/entity/UserCompaniesCollection.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/repositories/CompanyRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/CompanyRepository.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/repositories/OrderRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/OrderRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/repositories/TypeOfWorkRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/TypeOfWorkRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/database_service/repositories/UserRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/database_service/repositories/UserRepository.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/routes/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/routes/package.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,11 +78,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -102,7 +124,8 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+      &quot;postgresql&quot;,
+      &quot;clickhouse&quot;
     ]
   }
 }</component>
@@ -153,6 +176,14 @@
       <workItem from="1677059246367" duration="14280000" />
       <workItem from="1677139377197" duration="6843000" />
       <workItem from="1677510939881" duration="7346000" />
+      <workItem from="1679679804450" duration="10000" />
+      <workItem from="1679728424659" duration="2660000" />
+      <workItem from="1679806136487" duration="30718000" />
+      <workItem from="1680109552635" duration="17454000" />
+      <workItem from="1680338093166" duration="17736000" />
+      <workItem from="1680418572909" duration="2532000" />
+      <workItem from="1680626331177" duration="7653000" />
+      <workItem from="1680683631775" duration="27669000" />
     </task>
     <task id="LOCAL-00001" summary="init2">
       <created>1676620293685</created>
@@ -168,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676620342972</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="del">
+      <created>1677781602892</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677781602892</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

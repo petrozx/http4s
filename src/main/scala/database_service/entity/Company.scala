@@ -5,18 +5,18 @@ import slick.jdbc.H2Profile.api._
 import slick.lifted.ProvenShape
 
 @JsonCodec case class Company(
-                  id: String,
+                  companyID: String,
                   name: String,
-                  companyAttribute: String,
+                  companyAttribute: Option[String],
                   contracts: Option[String]
                   ) extends Serializable
 
 final case class CompanyTable(tag: Tag) extends Table[Company](tag, "company") {
-  def id = column[String]("id", O.PrimaryKey, O.Unique)
+  def id = column[String]("companyID", O.PrimaryKey, O.Unique)
 
   def name = column[String]("name")
 
-  def companyAttribute = column[String]("companyAttribute")
+  def companyAttribute = column[Option[String]]("companyAttribute")
 
   def contracts = column[Option[String]]("contracts")
 
